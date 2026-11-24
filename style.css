@@ -1,0 +1,135 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  background-color: #222;
+  color: #e7edf0;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.bucket-head {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.bucket-title {
+  font-weight: 600;
+  font-size: 24px;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.bucket-list {
+  padding: 16px;
+  list-style-type: none;
+}
+
+.list-item {
+  margin-bottom: 16px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list-title {
+  font-weight: 700;
+  color: bisque;
+}
